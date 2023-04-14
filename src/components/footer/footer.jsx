@@ -1,9 +1,9 @@
-import "./header.scss"
+import "./footer.scss"
 
-function Footer(params) {
+function Footer() {
     return(
         <footer className="footer">
-
+           Footer
         </footer>
     )
 }
