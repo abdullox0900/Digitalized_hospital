@@ -1,9 +1,12 @@
+import Container from "../container/container"
 import "./footer.scss"
 
 function Footer() {
-    return(
+    return (
         <footer className="footer">
-           Footer
+            <Container>
+
+            </Container>
         </footer>
     )
 }

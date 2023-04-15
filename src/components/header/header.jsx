@@ -1,7 +1,11 @@
+import { NavLink } from "react-router-dom"
+
 import "./header.scss"
 import Logo from "../../assets/svg/logo.svg"
 import Container from "../container/container"
 import Form from "../form/form"
+
+
 
 function Header() {
     return (
@@ -9,26 +13,26 @@ function Header() {
             <Container>
                 <div className="header__container">
                     <div className="header__nav-wrap">
-                        <a href="#" className="header__logo-link">
+                        <NavLink to={'/'} className="header__logo-link">
                             <img className="header__logo" src={Logo} alt="logo" width={180} height={80} />
-                        </a>
+                        </NavLink>
 
                         <nav className="header__nav">
                             <ul className="header__list">
                                 <li className="header__item">
-                                    <a href="" className="header__item-link">Xizmatlar</a>
+                                    <NavLink to={'/services'} className="header__item-link">Xizmatlar</NavLink>
                                 </li>
                                 <li className="header__item">
-                                    <a href="" className="header__item-link">Klinikalar</a>
+                                    <NavLink to={'/clinics'} className="header__item-link">Klinikalar</NavLink>
                                 </li>
                                 <li className="header__item">
-                                    <a href="" className="header__item-link">Shifokorlar</a>
+                                    <NavLink to={'/doctors'} className="header__item-link">Shifokorlar</NavLink>
                                 </li>
                                 <li className="header__item">
-                                    <a href="" className="header__item-link">Blog</a>
+                                    <NavLink to={'/blog'} className="header__item-link">Blog</NavLink>
                                 </li>
                                 <li className="header__item">
-                                    <a href="" className="header__item-link">Suniy Intelekt</a>
+                                    <NavLink to={'/intelligence'} className="header__item-link">Suniy Intelekt</NavLink>
                                 </li>
                             </ul>
                         </nav>
@@ -39,7 +43,7 @@ function Header() {
                         Shaxsiy kabinet</a>
                 </div>
             </Container>
-            <Form />
+            {/* <Form /> */}
         </header>
     )
 }
