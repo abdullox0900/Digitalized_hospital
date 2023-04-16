@@ -5,8 +5,6 @@ import Logo from "../../assets/svg/logo.svg"
 import Container from "../container/container"
 import Form from "../form/form"
 
-
-
 function Header() {
     return (
         <header className="header">
