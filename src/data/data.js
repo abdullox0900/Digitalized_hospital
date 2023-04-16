@@ -72,11 +72,10 @@ const doctorsData = [
         name: 'Baxromova Zulayho Akbarovna',
         job: 'Onkolog',
     }
-
 ]
 
 const clinicData = [
-    {
+{
         id: 0,
         name: 'Medical Center Focus',
         img: 'https://avatars.mds.yandex.net/get-altay/1938975/2a0000016f22a24b72d0eb253096b692b2a0/L_height',
@@ -160,3 +159,4 @@ const clinicData = [
         number: "+998 95 200 10 09"
     }
 ]
+    

@@ -17,24 +17,24 @@ function Footer() {
             <div className="footer__top-content">
               <div className="footer__top-contact">
                 <h2 className="footer__top-title active">Контактный центр</h2>
-                <a href="" className="footer__top-description main">
+                <a href="tel:106" className="footer__top-description main">
                   +7 (495) 023-60-84
                 </a>
               </div>
               <div className="footer__top-contact">
                 <h2 className="footer__top-title">Экстренная госпитализация</h2>
                 {/*Kontentlarni notog'ri tuzgan va strukturasini notog'ri yozgan bo'lsam ming bor uzur */}
-                <a href="" className="footer__top-description">
+                <a href="tel:106" className="footer__top-description">
                   +7 (495) 182-71-14
                 </a>
               </div>
               <div className="footer__top-contact">
                 <h2 className="footer__top-title">Приложение SmartMed</h2>
                 <div className="footer__top-app">
-                  <a href="">
+                  <a href="#" target="_blank">
                     <img src={icon1} alt="This is a google-play icon" />
                   </a>
-                  <a href="">
+                  <a href="#" target="_blank">
                     <img src={icon2} alt="This is a apple-store icon" />
                   </a>
                 </div>
@@ -76,11 +76,7 @@ function Footer() {
           </nav>
         </div>
         {/* < /Footer Navbar > */}
-        {/* < /Footer Top > */}
-        {/* < Footer Horizontal role > */}
-        {/* < /Footer Horizontal role > */}
-        {/* < Footer Bottom > */}
-          <hr className="footer__hr" />
+        <hr className="footer__hr" />
         <div className="footer__bottom">
           <div className="footer__bottom-item">
             <p className="footer__bottom-text">
@@ -88,9 +84,6 @@ function Footer() {
             </p>
           </div>
         </div>
-        {/* < /Footer Bottom > */}
-        {/* < /Footer container > */}
-        {/*Kontentlarni notog'ri tuzgan va strukturasini notog'ri yozgan bo'lsam ming bor uzur */}
       </Container>
     </footer>
   );
