@@ -1,10 +1,19 @@
 import Header from "../../components/header/header"
+import DDoctors from "../../components/doctors-card/doctors"
+import { doctorsData } from "../../data/data"
+import './doctor.scss'
 
 function Doctors() {
-    return(
+    return (
         <section>
             <Header />
-            Doctors
+            <div className="doctors_page">
+                {
+                    doctorsData.map((item,i) => (
+                        <DDoctors key={i} item={item} />
+                    ))
+                }
+            </div>
         </section>
     )
 }

@@ -4,6 +4,7 @@ import "./header.scss"
 import Logo from "../../assets/svg/logo.svg"
 import Container from "../container/container"
 import Form from "../form/form"
+import { Button } from "@mui/material"
 
 function Header() {
     return (
@@ -36,9 +37,9 @@ function Header() {
                         </nav>
                     </div>
 
-                    <a href="#" className="header__user-cob">
+                    <Button href="#" className="header__user-cob">
                         <ion-icon name="person-outline"></ion-icon>
-                        Shaxsiy kabinet</a>
+                        Shaxsiy kabinet</Button>
                 </div>
             </Container>
             {/* <Form /> */}

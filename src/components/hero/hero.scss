@@ -25,17 +25,17 @@
     }
 
     &__left-btn {
-        padding: 15px 50px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        background: linear-gradient(104.19deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), #00B288;
-        border: 1px solid #00B288;
-        border-radius: 6px;
-        cursor: pointer;
+        padding: 15px 50px !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: #fff !important;
+        background: linear-gradient(104.19deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), #00B288 !important;
+        border: 1px solid #00B288 !important;
+        border-radius: 6px !important;
+        cursor: pointer !important;
 
         &:hover {
-            opacity: 0.8;
+            opacity: 0.8 !important;
         }
 
         &:active {

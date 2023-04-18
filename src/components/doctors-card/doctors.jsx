@@ -1,13 +1,16 @@
 import Doktor from "../../assets/svg/doctor_opa.svg";
 import "./doctors.scss";
-function Doctors() {
+
+
+
+function Doctors({item}) {
   return (
-    <section className="doctors">
+    <div className="doctors">
       <div className="doctors__card">
         <div className="doctors__card-top">
           <a href="#" className="doctors__card-link">
             <img
-              src={Doktor}
+              src={item?.img}
               alt="This is a doctor img"
               className="doctors__card-img"
             />
@@ -15,11 +18,11 @@ function Doctors() {
         </div>
         <div className="doctors__title">
           <a href="#" className="doctors__title-link">
-            <h2 className="doctors__name">Колгаева Дагмара </h2>
-            <h2 className="doctors__name">Исаевна</h2>
+            <h2 className="doctors__name">{item?.name} </h2>
+            {/* <h2 className="doctors__name">Исаевна</h2> */}
           </a>
           <a href="#" className="doctors__title-link2">
-            Врач акушер-гинеколог
+           {item?.job}
           </a>
           <div className="doctors__bottom">
             <a href="#" className="doctors__bottom-link">
@@ -28,7 +31,7 @@ function Doctors() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 export default Doctors;
