@@ -7,6 +7,10 @@ import Doctors from "./components/doctors-card/doctors";
 import Search from "./components/search/search";
 import Aside from "./components/aside/aside";
 
+
+import DDoctors from "./components/doctors-card/doctors"
+import { doctorsData } from "./data/data"
+
 function App() {
   return (
     <>
@@ -14,7 +18,13 @@ function App() {
       <Hero />
       <Search />
       <Clinics />
-      <Doctors />
+      <div className="doctors_page">
+        {
+          doctorsData.map((item, i) => (
+            <DDoctors key={i} item={item} />
+          ))
+        }
+      </div>
       <Aside />
       <Footer />
     </>
