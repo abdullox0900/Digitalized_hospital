@@ -1,58 +1,70 @@
 import Clinic_logo from "../../assets/svg/clinic-logo.svg";
 import Star from "../../assets/svg/star4.svg";
 import "./clinics.scss";
+
+import { clinicData } from "../../data/data";
+import Container from "../container/container";
+
 function Clinics() {
   return (
-    <section className="clinics">
-      <div className="clinics__card">
-        <div className="clinics__top">
-          <a href="#" className="clinics__top-link">
-            <img
-              src={Clinic_logo}
-              alt="This is a clinic card img"
-              className="clinics__top-img"
-            />
-          </a>
-        </div>
-        <div className="clinics__bottom">
-          <h2 className="clinics__bottom-title">Medical Clinic</h2>
-          <div className="clinics__bottom-item">
-            <a href="#" className="clinics__bottom-link">
-              Подробнее
-            </a>
-          </div>
-        </div>
-        <div className="clinics__statistic">
-          <a href="#" className="clinics__statistic-links">
-            <img
-              src={Star}
-              alt="This is a star img"
-              className="clinics__statistic-img"
-            />
-            <img
-              src={Star}
-              alt="This is a star img"
-              className="clinics__statistic-img"
-            />
-            <img
-              src={Star}
-              alt="This is a star img"
-              className="clinics__statistic-img"
-            />
-            <img
-              src={Star}
-              alt="This is a star img"
-              className="clinics__statistic-img"
-            />
-            <img
-              src={Star}
-              alt="This is a star img"
-              className="clinics__statistic-img"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
+    <Container>
+      <section className="clinics">
+        {
+          clinicData?.slice(0, 6).map((item, index) => {
+            return (
+              <div className="clinics__card">
+                <div className="clinics__top">
+                  <a href="#" className="clinics__top-link">
+                    <img
+                      src={item.img}
+                      alt="This is a clinic card img"
+                      className="clinics__top-img"
+                    />
+                  </a>
+                </div>
+                <div className="clinics__bottom">
+                  <h2 className="clinics__bottom-title">{item?.name}</h2>
+                  <div className="clinics__bottom-item">
+                    <a href="#" className="clinics__bottom-link">
+                      Подробнее
+                    </a>
+                  </div>
+                </div>
+                <div className="clinics__statistic">
+                  <a href="#" className="clinics__statistic-links">
+                    <img
+                      src={Star}
+                      alt="This is a star img"
+                      className="clinics__statistic-img"
+                    />
+                    <img
+                      src={Star}
+                      alt="This is a star img"
+                      className="clinics__statistic-img"
+                    />
+                    <img
+                      src={Star}
+                      alt="This is a star img"
+                      className="clinics__statistic-img"
+                    />
+                    <img
+                      src={Star}
+                      alt="This is a star img"
+                      className="clinics__statistic-img"
+                    />
+                    <img
+                      src={Star}
+                      alt="This is a star img"
+                      className="clinics__statistic-img"
+                    />
+                  </a>
+                </div>
+              </div>
+            )
+          })
+        }
+      </section>
+    </Container>
   );
 }
 export default Clinics;
