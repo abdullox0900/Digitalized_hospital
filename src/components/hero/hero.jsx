@@ -1,7 +1,7 @@
 import Container from "../container/container"
 import "./hero.scss"
 
-import Img from "../../assets/img/alimova.png"
+import Img from "../../assets/img/alimova.png.svg"
 import { Button } from "@mui/material"
 
 function Hero() {
