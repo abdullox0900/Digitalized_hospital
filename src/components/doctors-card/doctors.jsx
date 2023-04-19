@@ -1,11 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Doktor from "../../assets/svg/doctor_opa.svg";
 import "./doctors.scss";
 
 function Doctors({ item }) {
+  const navigate = useNavigate()
   return (
-    <NavLink to={"/doctors-inner"}>
-      <div className="doctors">
+    <div >
+      <div className="doctors" >
         <div className="doctors__card">
           <div className="doctors__card-top">
             <a href="#" className="doctors__card-link">
@@ -25,14 +26,14 @@ function Doctors({ item }) {
               {item?.job}
             </a>
             <div className="doctors__bottom">
-              <a href="#" className="doctors__bottom-link">
+              <button  className="doctors__bottom-link" onClick={()=>{navigate("/doctors-inner",{state:item})}}>
               Batafsil
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </NavLink>
+    </div>
   );
 }
 export default Doctors;

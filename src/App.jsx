@@ -12,9 +12,20 @@ import DDoctors from "./components/doctors-card/doctors"
 import { doctorsData } from "./data/data"
 import Container from "./components/container/container";
 import ServicesCard from "./components/services-card/services-card";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function App() {
 
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({
+      top:0,
+      behavior:"auto"
+    });
+  }, [location.pathname])
+  
   document.body.style = 'auto'
 
   return (

@@ -1,13 +1,23 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 
 import "./header.scss"
 import Logo from "../../assets/svg/logojon.svg"
 import Container from "../container/container"
 import Form from "../form/form"
 import { Button } from "@mui/material"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function Header() {
+
+
+    const location = useLocation()
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "auto"
+        });
+    }, [location.pathname])
 
     const [isShown, setisShown] = useState(false);
 
@@ -55,8 +65,9 @@ function Header() {
                     </div>
 
                     <Button onClick={handle_open} href="#" className="header__user-cob">
-                        <ion-icon name="person-outline"></ion-icon>
-                        Shaxsiy kabinet</Button>
+                        <ion-icon name="person"></ion-icon>
+                        Shaxsiy kabinet
+                    </Button>
                 </div>
             </Container>
             {isShown ? <Form handle_close={handle_close} /> : null}

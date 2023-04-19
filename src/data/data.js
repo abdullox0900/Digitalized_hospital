@@ -49,7 +49,7 @@ export const doctorsData = [
     },
     {
         id: 8,
-        img: 'https://medsi.ru/upload/resize_cache/iblock/446/328_350_2/44661bacb0df89c820e0b1bec2612036.jpg',
+        img: 'https://medsi.ru/upload/resize_cache/iblock/826/328_350_2/826f78ec5ec99d595eed90196d3d2da8.jpg',
         name: 'Azamatov Aziz Qodirovich',
         job: 'Xirurg',
     }

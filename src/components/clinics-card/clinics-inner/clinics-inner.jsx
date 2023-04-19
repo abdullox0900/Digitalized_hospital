@@ -1,11 +1,16 @@
+import Footer from "../../footer/footer"
 import Header from "../../header/header"
+import Xizmatlar from './Xizmatlar'
 import "./clinics-inner.scss"
 
 function ClinicsInner() {
     return (
         <section>
             <Header />
-            inner
+            <div>
+                <Xizmatlar />
+            </div>
+            <Footer />
         </section>
     )
 }

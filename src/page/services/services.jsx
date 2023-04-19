@@ -9,7 +9,7 @@ function Services() {
         <section>
             <Header />
             <Container>
-                <h2 className="clinics__title">Клиники</h2>
+                <h2 className="clinics__title">Klinikalar</h2>
                 <Search />
                 <br />
                 <br />
