@@ -8,11 +8,11 @@ function Search() {
         <input
           type="text"
           className="search__input"
-          placeholder="Гинеколог, невролог, KT, УЗИ, анализы..."
+          placeholder="Qidiruv.."
         />
         <button className="search__btn">
           <img src={SearchImg} alt="This is a search icon" />
-          Search
+          Qidiruv
         </button>
       </div>
     </Container>

@@ -1,8 +1,8 @@
 import "./form.scss";
 
-import Logo from "../../assets/svg/logo.svg";
+import Logo from "../../assets/svg/logojon.svg";
 
-function Form(params) {
+function Form() {
     return (
         <div className="login">
             <div className="login__form">

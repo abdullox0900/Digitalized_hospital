@@ -4,7 +4,9 @@ function Blog() {
     return (
         <section>
             <Header />
-            Blog
+            <div style={{display: "flex", alignItems: 'center', justifyContent: "center", height: '70vh'}}>
+            Bloglar Tez Kunda....
+            </div>
         </section>
     )
 }

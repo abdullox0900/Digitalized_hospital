@@ -1,32 +1,29 @@
-import Clinic_logo from "../../assets/svg/clinic-logo.svg";
+import { NavLink } from "react-router-dom";
+
 import Star from "../../assets/svg/star4.svg";
 import "./clinics.scss";
 
 import { clinicData } from "../../data/data";
-import Container from "../container/container";
 
-function Clinics() {
+function ClinicsCard() {
   return (
-    <Container>
-      <section className="clinics">
-        {
-          clinicData?.slice(0, 6).map((item, index) => {
-            return (
+    <section className="clinics">
+
+      {
+        clinicData?.slice(0, 6).map((item, index) => {
+          return (
+            <NavLink to={"/clinics-inner"}>
               <div className="clinics__card">
-                <div className="clinics__top">
-                  <a href="#" className="clinics__top-link">
                     <img
                       src={item.img}
                       alt="This is a clinic card img"
                       className="clinics__top-img"
                     />
-                  </a>
-                </div>
                 <div className="clinics__bottom">
                   <h2 className="clinics__bottom-title">{item?.name}</h2>
                   <div className="clinics__bottom-item">
                     <a href="#" className="clinics__bottom-link">
-                      Подробнее
+                    Batafsil
                     </a>
                   </div>
                 </div>
@@ -60,11 +57,11 @@ function Clinics() {
                   </a>
                 </div>
               </div>
-            )
-          })
-        }
-      </section>
-    </Container>
+            </NavLink>
+          )
+        })
+      }
+    </section>
   );
 }
-export default Clinics;
+export default ClinicsCard;

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 
 import "./header.scss"
-import Logo from "../../assets/svg/logo.svg"
+import Logo from "../../assets/svg/logojon.svg"
 import Container from "../container/container"
 import Form from "../form/form"
 import { Button } from "@mui/material"
@@ -13,7 +13,7 @@ function Header() {
                 <div className="header__container">
                     <div className="header__nav-wrap">
                         <NavLink to={'/'} className="header__logo-link">
-                            <img className="header__logo" src={Logo} alt="logo" width={180} height={80} />
+                            <img className="header__logo" src={Logo} alt="logo" width={120} height={60} />
                         </NavLink>
 
                         <nav className="header__nav">
@@ -26,6 +26,9 @@ function Header() {
                                 </li>
                                 <li className="header__item">
                                     <NavLink to={'/doctors'} className="header__item-link">Shifokorlar</NavLink>
+                                </li>
+                                <li className="header__item">
+                                    <NavLink to={'/map'} className="header__item-link">Map</NavLink>
                                 </li>
                                 <li className="header__item">
                                     <NavLink to={'/blog'} className="header__item-link">Blog</NavLink>

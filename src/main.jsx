@@ -10,6 +10,8 @@ import Clinics from './page/clinics/clinics';
 import Doctors from './page/doctors/doctors';
 import Blog from './page/blog/blog';
 import Intelligence from './page/intelligence/intelligence';
+import ClinicsInner from './components/clinics-card/clinics-inner/clinics-inner';
+import Map from './page/map/map';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,18 @@ const router = createBrowserRouter([
   {
     path: "/intelligence",
     element: <Intelligence />,
+  },
+  {
+    path: "/clinics-inner",
+    element: <ClinicsInner />,
+  },
+  {
+    path: "/doctors-inner",
+    element: <ClinicsInner />,
+  },
+  {
+    path: "/map",
+    element: <Map />,
   },
 ]);
 

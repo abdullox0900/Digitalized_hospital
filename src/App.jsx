@@ -10,17 +10,36 @@ import Aside from "./components/aside/aside";
 
 import DDoctors from "./components/doctors-card/doctors"
 import { doctorsData } from "./data/data"
+import Container from "./components/container/container";
+import ServicesCard from "./components/services-card/services-card";
 
 function App() {
+
+  document.body.style = 'auto'
+
   return (
     <>
       <Header />
       <Hero />
       <Search />
-      <Clinics />
-      <div className="doctors_page">
+      <Container>
+        <h2 className="main-title" style={{ margin: '45px 0' }}>Klinikalar</h2>
+      </Container>
+      <Container>
+        <Clinics />
+      </Container>
+      <Container>
+        <h2 className="main-title" style={{ margin: '45px 0' }}>Xizmatlar</h2>
+      </Container>
+      <Container>
+        <ServicesCard />
+      </Container>
+      <Container>
+        <h2 className="main-title" style={{ margin: '45px 0' }}>Shifokorlar</h2>
+      </Container>
+      <div className="doctors_page" style={{ marginBottom: '100px' }}>
         {
-          doctorsData.map((item, i) => (
+          doctorsData?.slice(0, 8)?.map((item, i) => (
             <DDoctors key={i} item={item} />
           ))
         }

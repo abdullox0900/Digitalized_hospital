@@ -16,20 +16,20 @@ function Footer() {
           <div className="footer__top">
             <div className="footer__top-content">
               <div className="footer__top-contact">
-                <h2 className="footer__top-title active">Контактный центр</h2>
+                <h2 className="footer__top-title active">Aloqa markazi</h2>
                 <a href="tel:106" className="footer__top-description main">
-                  +7 (495) 023-60-84
+                  +998 90 030 30 30
                 </a>
               </div>
               <div className="footer__top-contact">
-                <h2 className="footer__top-title">Экстренная госпитализация</h2>
+                <h2 className="footer__top-title">Shoshilinch kasalxonaga yotqizish</h2>
                 {/*Kontentlarni notog'ri tuzgan va strukturasini notog'ri yozgan bo'lsam ming bor uzur */}
                 <a href="tel:106" className="footer__top-description">
-                  +7 (495) 182-71-14
+                  +998 90 040 40 40
                 </a>
               </div>
               <div className="footer__top-contact">
-                <h2 className="footer__top-title">Приложение SmartMed</h2>
+                <h2 className="footer__top-title">Raqamli shifoxona Mobil App</h2>
                 <div className="footer__top-app">
                   <a href="#" target="_blank">
                     <img src={icon1} alt="This is a google-play icon" />

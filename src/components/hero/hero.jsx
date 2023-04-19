@@ -9,8 +9,8 @@ function Hero() {
         <Container>
             <section className="hero">
                 <div className="hero__left">
-                    <h1 className="hero__left-title">Digital Hospital</h1>
-                    <p className="hero__left-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eligendi asperiores minima, quae cumque ea deleniti officia tempore facilis aliquam dolore a rem incidunt esse? Nihil facilis dignissimos sapiente ducimus!</p>
+                    <h1 className="hero__left-title">Raqamli shifoxona</h1>
+                    <p className="hero__left-desc">Bizning raqamli shifoxonamizga xush kelibsiz. Shaxsiylashtirilgan davolash rejalari va real vaqtda yangilanishlar bilan sog'liqni saqlash bo'yicha sayohatni biz bilan boshdan kechiring.</p>
                     <Button className="hero__left-btn">Ko'proq</Button>
                 </div>
                 <div className="hero__right">
