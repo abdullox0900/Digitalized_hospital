@@ -42,13 +42,13 @@ function Header() {
                                     <NavLink to={'/doctors'} className="header__item-link">Shifokorlar</NavLink>
                                 </li>
                                 <li className="header__item">
-                                    <NavLink to={'/map'} className="header__item-link">Map</NavLink>
+                                    <NavLink to={'/map'} className="header__item-link">Joylashuv</NavLink>
                                 </li>
                                 <li className="header__item">
-                                    <NavLink to={'/blog'} className="header__item-link">Blog</NavLink>
+                                    <NavLink to={'/blog'} className="header__item-link">Yangiliklar</NavLink>
                                 </li>
                                 <li className="header__item">
-                                    <NavLink to={'/intelligence'} className="header__item-link">Suniy Intelekt</NavLink>
+                                    <NavLink to={'/intelligence'} className="header__item-link">Sun'iy Intellekt</NavLink>
                                 </li>
                             </ul>
                         </nav>

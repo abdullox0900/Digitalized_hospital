@@ -10,7 +10,7 @@ function Intelligence() {
     return (
         <section>
             {/* <Header /> */}
-            <div className="an" style={{position: 'relative'}}>
+            <div className="an" style={{ position: 'relative' }}>
                 <div class='wrap'>
                     <div class='c'></div>
                     <div class='c'></div>
@@ -315,6 +315,10 @@ function Intelligence() {
                 </div>
 
                 <NavLink className={'an-nav'} to={'/'}><ion-icon name="arrow-back-outline"></ion-icon>ortga</NavLink>
+
+                <center>
+                    <div style={{ position: 'relative', top: '600px', width: '230px', textAlign: 'center', color: 'white', fontSize: '20px', border: '0.5px solid white', padding: '15px 50px', borderRadius: '30px' }}>Tez Kunda...</div>
+                </center>
             </div>
         </section>
     )
