@@ -5,8 +5,22 @@ import Logo from "../../assets/svg/logojon.svg"
 import Container from "../container/container"
 import Form from "../form/form"
 import { Button } from "@mui/material"
+import { useState } from "react"
 
 function Header() {
+
+    const [isShown, setisShown] = useState(false);
+
+
+    function handle_open() {
+        setisShown(true)
+    }
+
+    function handle_close(params) {
+        setisShown(false)
+    }
+
+
     return (
         <header className="header">
             <Container>
@@ -40,12 +54,12 @@ function Header() {
                         </nav>
                     </div>
 
-                    <Button href="#" className="header__user-cob">
+                    <Button onClick={handle_open} href="#" className="header__user-cob">
                         <ion-icon name="person-outline"></ion-icon>
                         Shaxsiy kabinet</Button>
                 </div>
             </Container>
-            {/* <Form /> */}
+            {isShown ? <Form handle_close={handle_close} /> : null}
         </header>
     )
 }
